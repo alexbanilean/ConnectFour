@@ -6,9 +6,11 @@
 class Game {
 
 private:
-    GameScreen screen;
+	GameScreen screen;
 
 public:
+	Game(){}
+
     void mainLoop();
 };
 

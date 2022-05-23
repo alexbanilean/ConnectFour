@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.21)
 project(ConnectFour)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_EXE_LINKER_FLAGS "-static")
 
 add_executable(ConnectFour src/main.cpp src/game.cpp headers/game.h src/gamescreen.cpp headers/gamescreen.h src/piece.cpp headers/piece.h)
 

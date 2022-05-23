@@ -4,7 +4,9 @@ GameScreen::GameScreen(){
 	resolution = Vector2f(WINDOW_WIDTH, WINDOW_HEIGHT);
 	window.create(VideoMode(resolution.x, resolution.y), "ConnectFour", Style::Default);
 	window.setFramerateLimit(FPS);
-	
+
+	current_pieces.assign(42, false);
+
 	StartLayout();
 }
 

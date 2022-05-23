@@ -26,7 +26,7 @@ private:
 	Color defaultPieceColor = Color::Black;
 
 	vector<Piece> pieces = {};
-	std::vector<bool> current_pieces = vector(42, false);
+	vector<bool> current_pieces;
 	bool player_turn;
 
 	int currentGameState, result, nr_of_moves, currentGameMode;
